@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SJ Storee</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(180deg,#000,#111);
+}
+
+.hero h1{
+font-size:60px;
+font-weight:700;
+letter-spacing:3px;
+margin-bottom:15px;
+}
+
+.hero p{
+color:#bdbdbd;
+font-size:18px;
+margin-bottom:40px;
+}
+
+.menu{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.btn{
+background:#fff;
+color:#000;
+text-decoration:none;
+padding:15px 40px;
+border-radius:50px;
+font-weight:bold;
+cursor:pointer;
+border:none;
+font-size:16px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(255,255,255,.3);
+}
+
+.section{
+display:none;
+padding:80px 8%;
+animation:fade .5s;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+border:1px solid #222;
+padding:25px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#fff;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:#bdbdbd;
+margin-bottom:15px;
+}
+
+.price{
+font-size:28px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.buy{
+display:block;
+text-align:center;
+background:#fff;
+color:#000;
+text-decoration:none;
+padding:12px;
+border-radius:10px;
+font-weight:bold;
+transition:.3s;
+}
+
+.buy:hover{
+background:#ddd;
+}
+
+footer{
+padding:25px;
+text-align:center;
+border-top:1px solid #222;
+color:#888;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<h1>WELCOME TO SJ STOREE</h1>
+<p>TERIMAKASIH SUDAH MEMPERCAYAI SJ STOREE</p>
+
+<div class="menu">
+<button class="btn" onclick="showProduk()">
+LIHAT PRODUK
+</button>
+
+<button class="btn" onclick="showLainnya()">
+LAINNYA
+</button>
+</div>
+</div>
+
+<section id="produk" class="section">
+
+<h2>OPEN JASA</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>JASA EDIT</h3>
+<p>BISA REQUEST MAU EDIT SEPERTI APA</p>
+<div class="price">Rp40.000</div>
+<a class="buy"
+href="https://wa.me/6283131920967?text=Halo%20SJ%20Storee,%20saya%20ingin%20membeli%20jasa%20edit"
+target="_blank">BUY NOW</a>
+</div>
+
+<div class="card">
+<h3>JASA BIKIN LOGO</h3>
+<p>BISA REQUEST MAU LOGO SEPERTI APA</p>
+<div class="price">Rp35.000</div>
+<a class="buy"
+href="https://wa.me/6283131920967?text=Halo%20SJ%20Storee,%20saya%20ingin%20membeli%20jasa%20bikin%20logo"
+target="_blank">BUY NOW</a>
+</div>
+
+<div class="card">
+<h3>JASA BIKIN SC BOT WHATSAPP</h3>
+<p>BISA REQUEST SC NYA SEPERTI APA</p>
+<div class="price">Rp50.000</div>
+<a class="buy"
+href="https://wa.me/6283131920967?text=Halo%20SJ%20Storee,%20saya%20ingin%20membeli%20jasa%20bikin%20sc bot whatsapp"
+target="_blank">BUY NOW</a>
+</div>
+
+<div class="card">
+<h3>JASA SUNTIK SOSMED</h3>
+<p>TT,IG,YT,DLL</p>
+<div class="price">Rp7.000</div>
+<a class="buy"
+href="https://wa.me/6283131920967?text=Halo%20SJ%20Storee,%20saya%20ingin%20membeli%20jasa%20suntik sosmed"
+target="_blank">BUY NOW</a>
+</div>
+
+<div class="card">
+<h3>JASA BIKIN WEBSITE</h3>
+<p>BISA REQUEST WEB SEPERTI APA</p>
+<div class="price">Rp80.000</div>
+<a class="buy"
+href="https://wa.me/6283131920967?text=Halo%20SJ%20Storee,%20saya%20ingin%20membeli%20jasa%20bikin%20website"
+target="_blank">BUY NOW</a>
+</div>
+
+</div>
+</section>
+
+<section id="lainnya" class="section">
+
+<h2>NOKOS WA</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>INDONESIA</h3>
+<p></p>
+<div class="price">Rp7.000</div>
+<a class="buy"
+href="https://wa.me/6283131920967?text=Halo%20SJ%20Storee,%20saya%20ingin%20membeli%20nokos%20indonesia"
+target="_blank">BUY NOW</a>
+</div>
+
+<div class="card">
+<h3>PHILIPINA</h3>
+<p></p>
+<div class="price">Rp8.000</div>
+<a class="buy"
+href="https://wa.me/6283131920967?text=Halo%20SJ%20Storee,%20saya%20ingin%20membeli%20nokos%20philipina"
+target="_blank">BUY NOW</a>
+</div>
+
+<div class="card">
+<h3>THAILAND</h3>
+<p></p>
+<div class="price">Rp18.000</div>
+<a class="buy"
+href="https://wa.me/6283131920967?text=Halo%20SJ%20Storee,%20saya%20ingin%20membeli%20nokos%20thailand"
+target="_blank">BUY NOW</a>
+</div>
+
+</div>
+</section>
+
+<footer>
+© SJ STOREE • OPEN JASA/NOKOS 
+</footer>
+
+<script>
+function showProduk(){
+document.getElementById("produk").style.display="block";
+document.getElementById("lainnya").style.display="none";
+
+window.scrollTo({
+top:document.getElementById("produk").offsetTop,
+behavior:"smooth"
+});
+}
+
+function showLainnya(){
+document.getElementById("lainnya").style.display="block";
+document.getElementById("produk").style.display="none";
+
+window.scrollTo({
+top:document.getElementById("lainnya").offsetTop,
+behavior:"smooth"
+});
+}
+</script>
+<!-- Tombol WhatsApp Mengambang -->
+<a href="https://wa.me/6283131920967" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+<style>
+.whatsapp-float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+}
+
+.whatsapp-float img{
+    width: 35px;
+    height: 35px;
+}
+</style>
+
+</body>
+</html>
